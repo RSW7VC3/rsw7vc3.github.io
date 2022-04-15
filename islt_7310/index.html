@@ -11,26 +11,35 @@ Tested: 3/27/2022
 *******************************
 -->
 
-               <meta charset="utf-8">
+    <meta charset="utf-8">
               
-               <link rel="stylesheet" href="style.css">
-
-               <title>Homepage</title>
-
-               <style>
-                h1 {text-align: center;}
-                </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+                
+    <link rel="stylesheet" href="nav.css">
     
-    <header>
-        <h1>Welcome to Ryan's Portfolio Site!</h1>
-      </header>
-      <main>
-          <article>
-           <h3>About the Site</h3>
-           <p>Hello, welcome to my portfolio site! On this site, you will be able to learn more about me and my experience!</p>  
-           <p>This website holds many different pages with lots of information about me. One of my
+    <title>Homepage</title>
+</head>
+    
+<body>
+    <div class="main">
+        <header>
+            <h1>Welcome to Ryan's Portfolio Site!</h1>
+        </header>
+    </div>
+    
+    <div class="sidenav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#projects.html">Projects</a></li>
+        </ul>
+    </div>
+    
+    <main class="main">
+        <article>
+            <h3>About the Site</h3>
+            <p>Hello, welcome to my portfolio site! On this site, you will be able to learn more about me and my experience!</p>  
+            <p>This website holds many different pages with lots of information about me. One of my
             goals for this website is for anyone viewing this site to be able to learn about my
             experience through the work/projects. These projects will have a breakdown of
             everything about them with documents and photos. Another goal for this website is for
@@ -41,11 +50,11 @@ Tested: 3/27/2022
             described and give reason to as well. My main hope for this site is present myself and
             everything about me in the best way possible.
             </p>   
-          </article>
+        </article>
 
       </main>
       
-        <footer>
+        <footer class="main">
           <p>Author: Ryan Woods</p>
           <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
           <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
