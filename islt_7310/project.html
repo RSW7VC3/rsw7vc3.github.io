@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+******************************
+Title: 
+Use: 
+Author: 
+Developed: 
+Tested:
+*******************************
+-->
+
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="style.css">
+                
+    <link rel="stylesheet" href="nav.css">
+    
+    <title>Page Title</title>
+
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Welcome to Ryan's Portfolio Site!</h1>
+        </header>
+    </div>
+    
+    <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <button class="dropdown-btn">Projects/Experience</button>
+            <div class="dropdown-container">
+                <a href="project.html">Projects</a>
+                <a href="internship.html">Internship</a>
+                <a href="#link3.html">Link 3</a>
+            </div>  
+    </div>
+    <main class="main">
+          <article>
+                <h3>Enter h3 here</h3>   
+          </article>
+    </main>
+      
+        <footer class="main">
+            <p>Author: Ryan Woods</p>
+            <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
+            <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
+        </footer>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+        }
+    </script>     
+</body>
+</html>

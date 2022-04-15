@@ -27,12 +27,15 @@ Tested: 3/27/2022
         </header>
     </div>
     
-    <div class="sidenav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#projects.html">Projects</a></li>
-        </ul>
+       <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <button class="dropdown-btn">Projects/Experience</button>
+            <div class="dropdown-container">
+                <a href="project.html">Projects</a>
+                <a href="internship.html">Internship</a>
+                <a href="#link3.html">Link 3</a>
+            </div>  
     </div>
     
     <main class="main">
@@ -59,6 +62,22 @@ Tested: 3/27/2022
           <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
           <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
         </footer>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+        }
+    </script>
         
 </body>
 </html>
