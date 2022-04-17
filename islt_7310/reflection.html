@@ -60,6 +60,21 @@ Tested: 4/17/2022
           <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
           <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
         </footer>
-        
+        <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+            });
+        }
+    </script>
 </body>
 </html>
