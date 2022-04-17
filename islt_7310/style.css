@@ -8,6 +8,13 @@ h1 {
 p {
     color: #000000;
 }
+.indent {
+    text-indent: 50px;
+    
+}
+p::first-letter{
+    font-size: 150%;
+}
 .footer {
     position: fixed;
     left: 0;
