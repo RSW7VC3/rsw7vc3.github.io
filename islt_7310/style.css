@@ -1,12 +1,18 @@
 body {
     background-color: #3A82E0;
+    font-size: 15px;
 }
 h1 {
     color: #1BFAD9;
     text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+h3 {
+    font-family: "Noto Sans", sans-serif;
 }
 p {
     color: #000000;
+    font-family: "Didot", sans-serif;
 }
 .indent {
     text-indent: 50px;
