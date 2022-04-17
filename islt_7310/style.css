@@ -13,7 +13,7 @@ p {
     
 }
 p::first-letter{
-    font-size: 150%;
+    font-size: 125%;
 }
 .footer {
     position: fixed;
