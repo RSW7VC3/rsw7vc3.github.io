@@ -8,7 +8,7 @@
     background-color: #3A82E0;
     overflow-x: hidden;
     padding-top: 20px;
-    font-family: "Didot", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .sidenav a, .dropdown-btn {
@@ -23,7 +23,7 @@
     text-align: left;
     cursor: pointer;
     outline: none;
-    font-family: "Didot", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 }
 
@@ -46,7 +46,7 @@
   display: none;
   background-color: #3A82E0;
   padding-left: 8px;
-  font-family: "Didot", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 @media screen and (max-height: 450px) {
