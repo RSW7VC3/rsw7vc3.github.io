@@ -26,4 +26,6 @@ p {
     background-color: #3A82E0;
     color: black;
     text-align: center;
+    font-size: 10px;
+    height: 75px;
   }
