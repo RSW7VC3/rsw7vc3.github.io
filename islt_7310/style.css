@@ -87,7 +87,7 @@ webkit-scrollbar-thumb {
 webkit-scrollbar-thumb:hover {
   background: black; 
 }
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
     body{
         font-size: 1rem;
     } 

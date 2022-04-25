@@ -1,6 +1,5 @@
 .sidenav {
     height: 100%;
-    width: ;
     z-index: 1;
     top: 0;
     left: 0;
@@ -9,7 +8,6 @@
     padding-top: 20px;
     font-family: "Noto Sans", sans-serif;
 }
-
 .sidenav a, .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -24,24 +22,19 @@
     outline: none;
     font-family: "Noto Sans", sans-serif;
 }
-}
-
 .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
 }
-
 .active {
   background-color: lightblue;
   color: white;
 }
-
 .dropdown-container {
   display: none;
   background-color: #3A82E0;
   padding-left: 8px;
   font-family: "Noto Sans", sans-serif;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 1rem;}
