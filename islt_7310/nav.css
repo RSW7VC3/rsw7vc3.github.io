@@ -13,7 +13,7 @@
 .sidenav a, .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.25rem;
     color: #1BFAD9;
     display: block;
     border: none;
@@ -30,12 +30,6 @@
     color: #f1f1f1;
 }
 
-.main {
-    margin-left: 200px;
-    font-size: 15px; 
-    padding: 0px 10px;
-}
-
 .active {
   background-color: lightblue;
   color: white;
@@ -50,5 +44,5 @@
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 1rem;}
 }

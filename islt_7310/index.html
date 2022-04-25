@@ -12,23 +12,21 @@ Tested: 4/21/2022
 -->
 
     <meta charset="utf-8">
-              
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-                
     <link rel="stylesheet" href="nav.css">
     
     <title>Homepage</title>
 
 </head> 
-<body>
-    
+<body class="grid-container">
     <div class="main">
-        <header>
-            <h1>Welcome to Ryan's Portfolio Site!</h1>
+        <header class="item1">
+            <h1>Ryan Woods</h1>
         </header>
     </div>
-    
-    <div class="sidenav">
+    <div class="item2"> 
+        <div class="sidenav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="reflection.html">Reflections & Goals</a>
@@ -38,9 +36,10 @@ Tested: 4/21/2022
                 <a href="project.html">Projects</a>
                 <a href="#projectreflections.html">Project Reflections</a>
             </div>  
+        </div>
     </div>
     
-    <main class="main">
+    <main class="item3">
         <article>
             <h3>About the Site</h3>
             <p>Hello, welcome to my portfolio site! On this site, you will be able to learn more about me and my experience!</p>  
@@ -60,9 +59,11 @@ Tested: 4/21/2022
       </main>
       
         <footer class="footer">
-          <p>Author: Ryan Woods</p>
-          <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
-          <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
+            <div class="item4">
+            <p>Author: Ryan Woods</p>
+            <p><a href="mailto:rsw7vc@umsystem.edu">rsw7vc@umsystem.edu</a></p>
+            <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
+            </div>d
         </footer>
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
