@@ -1,4 +1,67 @@
-.sidenav {
+nav {
+    width: auto;
+    height: auto;
+    background-color: #3A82E0;
+}
+
+nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 2px;
+    position: relative;
+    border: 4px solid #1BFAD9;
+    text-align: center;
+    width: auto;
+}
+ 
+nav ul li:hover {
+    background: #1BFAD9;
+}
+nav ul li a {
+  display: block;
+  font-size: 1.25rem;
+  padding: 15px 15px;
+}
+
+nav ul li ul {
+    display: block;
+    position: absolute;
+    width: auto;
+    padding: 2px;
+    visibility: hidden;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+}
+
+nav ul li ul li {
+  width: auto;
+  border-radius: 1px;
+}
+
+nav ul li ul li a {
+    padding: 8px 25px;
+}
+
+nav ul li ul li a:hover {
+   background-color: #1BFAD9;
+}
+
+@media all and (max-width: 640px) {
+  nav {
+   background: none;
+   } 
+   nav ul li ul li{display: none;}
+  }
+
+/* OLD nav with script*/
+/* .sidenav {
     height: 100%;
     z-index: 1;
     top: 0;
@@ -39,3 +102,4 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 1rem;}
 }
+*/

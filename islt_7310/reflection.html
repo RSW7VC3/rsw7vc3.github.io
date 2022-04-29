@@ -24,24 +24,26 @@ Tested: 4/24/2022
         <header class="item1">
             <h1>Reflections/Career Goals</h1>
         </header>
-    </div>
-    <div class="item2">
-        <div class="sidenav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="reflection.html">Reflections & Goals</a>
-                <a href="#Contact.html">Contact</a>
-                <button class="dropdown-btn">Experience</button>
-                <div class="dropdown-container">
-                    <a href="project.html">Projects</a>
-                    <a href="#projectreflections.html">Project Reflections</a>
-                </div>  
-        </div>
-    </div>
+    </div> 
+        <nav class="item2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reflection.html">Reflections & Goals</a>
+                <li><a href="#contact.html">Contact</a>
+                <li><a href="experience.html">Experience</a>
+                    <ul>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="#projectreflections.html">Project Reflections</a>
+                        <li><a href="#internship.html">Internship</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+      </nav>
     
       <main class="item3">
           <article>
-              <br>
               <h3>Reflection:</h3>
               <p class="indent">Throughout my whole time so far aspiring to work in the cybersecurity field I have done a lot to further my goal. I am finishing my time here at the University of Missouri taking my last few Information Technology courses of the many that have helped me gain the knowledge in not just cybersecurity but various topics like web and app design and Information systems. These courses leading me to getting my Bachelor of Science in Information Technology.</p>
               <h3>Goal #1:</h3>
@@ -61,21 +63,6 @@ Tested: 4/24/2022
             <p>&#169; 2022 Ryan Woods All Rights Reserved</p>
             </div>
         </footer>
-        <script>
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-            } else {
-            dropdownContent.style.display = "block";
-            }
-            });
-        }
-    </script>
+        
 </body>
 </html>
