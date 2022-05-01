@@ -1,6 +1,7 @@
 body {
     background-color: #3A82E0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    height: auto;
 }
 h1 {
     color: #1BFAD9;
@@ -24,22 +25,36 @@ p {
     font-family: "Didot", sans-serif;
 }
 .indent {
-    text-indent: 50px;   
+    text-indent: 25px;   
 }
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #3A82E0;
     color: black;
-    text-align: center;
-    font-size: 10px;
-    height: 75px;
+    font-size: .5rem;
+    height: auto;
+    font-family: "Didot", sans-serif;
+    background-image: url(footerback.jpeg);
+    background-size: 800px;
 }
-img{
-    display: block;
+.pics{
+    float: left;
+    padding 5px;
+    width: 25%;
+    height: 25%;
+    padding 5px;
+}
+.pics2{ /* internship pics*/
+    float: left;
+    padding: 5px;
+    width: 50%;
     height: 50%;
+}
+img{ /* for about me photo*/
+    display: block;
+    height: auto;
     width: 50%;
     border-radius: 10px;
     margin-left: auto;
@@ -54,41 +69,101 @@ img{
         'menu main'  
         'footer footer';
     grid-gap: 10px;
-    padding: 10px;
+    padding: 5px;
+    height: auto;
 }
 .item1 { 
     grid-area: header;
     grid-column: 1 / 3;
     text-align: center;
+    height: auto;
 }
 .item2 { 
     grid-area: menu;
     grid-column: 2 / 1;
+    align-content: center;
+    height: auto;
 }
 .item3 { 
     grid-area: main;
     grid-column: 2 / 2;
+    height: auto;
 }
 .item4 { 
     grid-area: footer;
     grid-column: 3 / 1;
+    height: auto;
+    float: left;
 }
-webkit-scrollbar {
-  width: 20px;
+main {
+    height: auto;
 }
-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+ul1 { /*list buttons on experience page*/
+    font-size: 1.25rem;
+    list-style: none;
+    font-family: "Noto Sans", sans-serif;
+    color: #1BFAD9;
 }
-webkit-scrollbar-thumb {
-  background: #1BFAD9; 
-  border-radius: 10px;
+button {
+    background-color: #1BFAD9;
+    border: none;
+    color: black;
+    padding: 12px 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-webkit-scrollbar-thumb:hover {
-  background: black; 
+video {
+        width: 100%;
+        height: auto;
 }
+.pic { /*icons*/
+    padding: 0px;
+    transition: transform 0s;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    float: left;
+}
+.pic:hover {
+    transform: scale(5);
+    z-index:10;
+}
+
 @media screen and (max-width: 480px) {
     body{
         font-size: 1rem;
     } 
+}
+@media print {
+    body{
+        background: transparent !important;
+        color: #000 !important;
+        margin: 1in;
+    }
+    
+    ul {
+        font-size: .5rem;
+        font-family: serif;
+    }
+    footer img,
+    video,
+    header,
+    footer,
+    img {
+        display: none;
+    }
+    blockquote{
+        font-size: 15pt;
+        justify-content: center;
+    }
+    p {
+        font-size: .75rem;
+    }
+    h1 {
+        font-family: font-family: 'Roboto', sans-serif;
+    }
 }
