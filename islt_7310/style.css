@@ -133,6 +133,30 @@ video {
     z-index:10;
 }
 
+table {
+    width: 100%;
+    overflow-x:auto;
+    border:1px solid #1BFAD9;
+}
+caption {
+    font-family: "Noto Sans", sans-serif;
+    border:1px solid #1BFAD9;
+    width: 100%;
+    overflow-x:auto;
+}
+th {
+    background-color: #1BFAD9;
+    font-family: "Noto Sans", sans-serif;
+    overflow-x:auto;
+    border:1px solid #1BFAD9;
+}
+
+td {
+    font-family: "Didot", sans-serif;
+    overflow-x:auto;
+    border:1px solid #1BFAD9;
+}
+
 @media screen and (max-width: 480px) {
     body{
         font-size: 1rem;
