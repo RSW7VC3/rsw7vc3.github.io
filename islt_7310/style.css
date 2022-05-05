@@ -161,6 +161,14 @@ td {
     body{
         font-size: 1rem;
     } 
+    
+}
+@media screen and (max-width: 480px) {
+    .table-scroller {
+        overflow-x: auto;
+        font-size: 1rem;
+        width: 300px;
+    }
 }
 @media print {
     body{
