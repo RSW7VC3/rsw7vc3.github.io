@@ -33,7 +33,7 @@ p {
     bottom: 0;
     width: 100%;
     color: black;
-    font-size: .5rem;
+    font-size: .75rem;
     height: auto;
     font-family: "Didot", sans-serif;
     background-image: url(footerback.jpeg);
@@ -161,6 +161,9 @@ td {
     body{
         font-size: 1rem;
     } 
+    footer {
+        font-size: .5rem;
+    }
     
 }
 @media screen and (max-width: 480px) {
